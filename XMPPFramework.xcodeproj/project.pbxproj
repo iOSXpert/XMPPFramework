@@ -77,12 +77,12 @@
 		7A81C7B82568039300F3D495 /* libidn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444D82567F5A600A16F71 /* libidn.framework */; };
 		7A81C7B92568039300F3D495 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444922567F57900A16F71 /* CocoaLumberjack.framework */; };
 		7A81C7BA2568039300F3D495 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444942567F57900A16F71 /* CocoaLumberjackSwift.framework */; };
-		7A81C7BC256803B100F3D495 /* KissXML.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444BE2567F59500A16F71 /* KissXML.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7A81C7BD256803B100F3D495 /* libidn.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444D82567F5A600A16F71 /* libidn.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7A81C7BE256803B100F3D495 /* CocoaLumberjack.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444922567F57900A16F71 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7A81C7BF256803B100F3D495 /* CocoaLumberjackSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444942567F57900A16F71 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A81C7BC256803B100F3D495 /* KissXML.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444BE2567F59500A16F71 /* KissXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A81C7BD256803B100F3D495 /* libidn.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444D82567F5A600A16F71 /* libidn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A81C7BE256803B100F3D495 /* CocoaLumberjack.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444922567F57900A16F71 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A81C7BF256803B100F3D495 /* CocoaLumberjackSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444942567F57900A16F71 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A81C7F0256804AE00F3D495 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A81C7D92568049800F3D495 /* CocoaAsyncSocket.framework */; };
-		7A81C7F1256804B300F3D495 /* CocoaAsyncSocket.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A81C7D92568049800F3D495 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A81C7F1256804B300F3D495 /* CocoaAsyncSocket.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A81C7D92568049800F3D495 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D91D42431FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
 		D91D42441FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
 		D91D42451FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91D42421FD9DAC90064FD27 /* XMPPPresence+XEP_0319.swift */; };
@@ -4596,7 +4596,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_CODE_SIGN_FLAGS = "--deep";
+				OTHER_CODE_SIGN_FLAGS = "--deep --timestamp";
 				PRODUCT_BUNDLE_IDENTIFIER = org.robbiehanson.XMPPFramework;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -4624,7 +4624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_CODE_SIGN_FLAGS = "--deep";
+				OTHER_CODE_SIGN_FLAGS = "--deep --timestamp";
 				PRODUCT_BUNDLE_IDENTIFIER = org.robbiehanson.XMPPFramework;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
