@@ -59,7 +59,7 @@
  * If you created your project with a previous version of Xcode, you may need to add the DEBUG macro manually.
 **/
 
-@import CocoaLumberjack;
+//@import CocoaLumberjack;
 
 // Global flag to enable/disable logging throughout the entire xmpp framework.
 
@@ -120,6 +120,11 @@
 
 // Define logging primitives.
 // These are primarily wrappers around the macros defined in Lumberjack's DDLog.h header file.
+
+#define LOG_MAYBE(async, lvl, flg, ctx, tag, fnct, frmt, ...) \
+        do { if((lvl & flg) != 0) LOG_MACRO(async, lvl, flg, ctx, tag, fnct, frmt, ##__VA_ARGS__); } while(0)
+//#define LOG_MACRO(isAsynchronous, lvl, flg, ctx, atag, fnct, frmt, ...) NSLog(@"XMPP isAsynchronous:%hhd,level:%li,flag:%li,context:%li,file:%s,function:%s,line:%ld,format:%@",isAsynchronous,lvl,flg,ctx,__FILE__,fnct,__LINE__,frmt)
+#define LOG_MACRO(isAsynchronous, lvl, flg, ctx, atag, fnct, frmt, ...) ;
 
 #define XMPP_LOG_OBJC_MAYBE(async, lvl, flg, ctx, frmt, ...) \
 do{ if(XMPP_LOGGING_ENABLED) LOG_MAYBE(async, lvl, flg, ctx, nil, sel_getName(_cmd), frmt, ##__VA_ARGS__); } while(0)

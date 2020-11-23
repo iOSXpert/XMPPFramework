@@ -44,7 +44,7 @@
 	{
 		XMPPLogError(@"Adding instance variables to XMPPvCardTempEmail is not currently supported!");
 		
-		[DDLog flushLog];
+		// [DDLog flushLog];
 		exit(15);
 	}
 }
