@@ -3341,7 +3341,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = XMPP;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = XMPPFramework;
 				TargetAttributes = {
 					0D44BAE91E537066000930E0 = {
@@ -3368,11 +3368,11 @@
 			};
 			buildConfigurationList = 0D44BAE41E537066000930E0 /* Build configuration list for PBXProject "XMPPFramework" */;
 			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = 0D44BAE01E537066000930E0;
 			productRefGroup = 0D44BAEB1E537066000930E0 /* Products */;
