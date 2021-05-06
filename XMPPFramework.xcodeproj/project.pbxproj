@@ -65,6 +65,7 @@
 		0D44BB721E537110000930E0 /* XMPPStringPrep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44BB641E537110000930E0 /* XMPPStringPrep.m */; };
 		0D44BB731E537110000930E0 /* XMPPTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D44BB651E537110000930E0 /* XMPPTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D44BB741E537110000930E0 /* XMPPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44BB661E537110000930E0 /* XMPPTimer.m */; };
+		7A33F4EB264402AB00694519 /* CocoaAsyncSocket.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0EDAC3256BD4B900AE62C6 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A7445082567F5E000A16F71 /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444BE2567F59500A16F71 /* KissXML.framework */; };
 		7A7445092567F5E000A16F71 /* libidn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7444D82567F5A600A16F71 /* libidn.framework */; };
 		7A74450D2567F5F700A16F71 /* KissXML.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A7444BE2567F59500A16F71 /* KissXML.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -1061,6 +1062,13 @@
 			remoteGlobalIDString = 7D8B70C41BCFA15700D8E273;
 			remoteInfo = "tvOS CocoaAsyncSocket";
 		};
+		7A33F4E0264402A600694519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A0EDABA256BD4B900AE62C6 /* CocoaAsyncSocket.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FC41F121B9D965000578BEB;
+			remoteInfo = "Mac CocoaAsyncSocket";
+		};
 		7A7444BB2567F59500A16F71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7A7444B42567F59500A16F71 /* KissXML.xcodeproj */;
@@ -1172,6 +1180,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				7A33F4EB264402AB00694519 /* CocoaAsyncSocket.framework in Copy Frameworks */,
 				7A81C7BC256803B100F3D495 /* KissXML.framework in Copy Frameworks */,
 				7A81C7BD256803B100F3D495 /* libidn.framework in Copy Frameworks */,
 			);
@@ -3308,6 +3317,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7A33F4E1264402A600694519 /* PBXTargetDependency */,
 				7A81C7B02568038300F3D495 /* PBXTargetDependency */,
 				7A81C7B22568038300F3D495 /* PBXTargetDependency */,
 			);
@@ -4078,6 +4088,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7A33F4E1264402A600694519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mac CocoaAsyncSocket";
+			targetProxy = 7A33F4E0264402A600694519 /* PBXContainerItemProxy */;
+		};
 		7A7445012567F5CE00A16F71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "KissXML (macOS)";
