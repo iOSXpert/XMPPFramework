@@ -3351,7 +3351,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = XMPP;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = XMPPFramework;
 				TargetAttributes = {
 					0D44BAE91E537066000930E0 = {
